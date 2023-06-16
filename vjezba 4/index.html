@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- https://getbootstrap.com/docs/5.3/content/typography/ -->
+    <h1 class="display-6">h1. Bootstrap heading</h1>
+    <h2 class="display-6">h2. Bootstrap heading</h2>
+    <h3 class="display-3">h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+    <hr />
+
+    <p class="lead text-start text-decoration-underline">
+      Lorem ipsum dolor sit amet.
+    </p>
+    <p class="lead text-center text-decoration-line-through">
+      Lorem ipsum dolor sit amet.
+    </p>
+    <p class="lead text-end fw-bold">Lorem ipsum dolor sit amet.</p>
+
+    <!-- Boje - https://getbootstrap.com/docs/5.3/utilities/colors/ -->
+
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning">.text-warning</p>
+    <p class="text-info">.text-info</p>
+    <p class="text-body-tertiary">.text-body-tertiary</p>
+    <p class="text-muted">text-muted</p>
+    <p class="text-white bg-primary">Bijeli tekst, plava pozadina</p>
+    <p class="text-white bg-secondary">Bijeli tekst, siva pozadina</p>
+
+    <!-- Buttoni - https://getbootstrap.com/docs/5.3/components/buttons/ -->
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <!-- Margine i paddinzi - https://getbootstrap.com/docs/5.3/utilities/spacing/#margin-and-padding -->
+
+    <div class="bg-primary text-white m-3 p-3">Margina u svim smjerovima</div>
+    <div class="bg-primary text-white m-5 p-5">Margina u svim smjerovima</div>
+
+    <!-- Ako želimo raditi margine u vertikali dodemo y, ako želimo u horizontali dodajemo x -->
+
+    <div class="bg-primary text-white my-3 px-3">Margina u svim smjerovima</div>
+    <div class="bg-primary text-white my-5 px-5">Margina u svim smjerovima</div>
+
+    <!-- Ako želimo svaki smjer posebno definirati:
+        ps-1 = padding start 1 => lijevi padding
+        pt-1 = padding top 1 => gornji padding
+        pe-1 = padding end 1 => desni padding
+        pb-1 = padding bottom 1 => donji padding
+    -->
+    <div class="bg-primary text-white m-2 ps-1 pt-2 pe-3 pb-4">
+      Margina posebno u svakom smjeru
+    </div>
+
+    <span class="d-block bg-primary text-white m-4 p-4 border"
+      >Ovo je span 1</span
+    >
+    <span class="d-block bg-primary text-white m-4 p-4 border"
+      >Ovo je span 2</span
+    >
+    <span class="d-block bg-primary text-white m-4 p-4 border"
+      >Ovo je span 3</span
+    >
+
+    <div class="container my-5">
+      <h2>Container</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        culpa dolorum omnis odio eos, perspiciatis officiis neque animi velit
+        modi eveniet. Doloribus minus soluta ea consectetur! Minus, molestias
+        est. Voluptate repellendus eum voluptatibus vitae numquam dignissimos?
+        Quidem consequuntur repellat, molestiae vero cumque reprehenderit
+        dolores! Quod enim accusamus qui commodi laudantium!
+      </p>
+    </div>
+
+    <div class="container-fluid my-5">
+      <h2>Container</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        culpa dolorum omnis odio eos, perspiciatis officiis neque animi velit
+        modi eveniet. Doloribus minus soluta ea consectetur! Minus, molestias
+        est. Voluptate repellendus eum voluptatibus vitae numquam dignissimos?
+        Quidem consequuntur repellat, molestiae vero cumque reprehenderit
+        dolores! Quod enim accusamus qui commodi laudantium!
+      </p>
+
+      <!-- Container sa jednim redom i 3 jednaka stupca -->
+      <div class="container-lg my-5">
+        <h2>Redak sa 3 jednaka stupca</h2>
+        <div class="row">
+          <div class="col">
+            <p class="p-3 bg-primary text-light">Stupac 1</p>
+          </div>
+          <div class="col">
+            <p class="p-3 bg-primary text-light">Stupac 2</p>
+          </div>
+          <div class="col">
+            <p class="p-3 bg-primary text-light">Stupac 3</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container sa jednim redom i nejednakim stupcima -->
+      <div class="container-lg my-5">
+        <h2>Redak sa 3 nejednaka stupca</h2>
+        <div class="row">
+          <div class="col-6">
+            <p class="p-3 bg-primary text-light">Stupac 1</p>
+          </div>
+          <div class="col-3">
+            <p class="p-3 bg-primary text-light">Stupac 2</p>
+          </div>
+          <div class="col-3">
+            <p class="p-3 bg-primary text-light">Stupac 3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Responzivni container sa jednim redom i nejednakim stupcima -->
+      <div class="container-lg my-5">
+        <h2>Responzivni redak sa 3 nejednaka stupca</h2>
+        <div class="row">
+          <div class="col-sm-4 col-lg-6">
+            <p class="p-3 bg-primary text-light">Stupac 1</p>
+          </div>
+          <div class="col-sm-4 col-lg-3">
+            <p class="p-3 bg-primary text-light">Stupac 2</p>
+          </div>
+          <div class="col-sm-4 col-lg-3">
+            <p class="p-3 bg-primary text-light">Stupac 3</p>
+          </div>
+        </div>
+      </div>
+      <!-- Flex row pravila -->
+      <div class="container-lg my-5">
+        <h2>Justify</h2>
+        <div class="row justify-content-between">
+          <div class="col-md-3">
+            <p class="p-3 bg-primary text-light">Stupac 1</p>
+          </div>
+          <div class="col-md-3">
+            <p class="p-3 bg-primary text-light">Stupac 2</p>
+          </div>
+          <div class="col-md-3">
+            <p class="p-3 bg-primary text-light">Stupac 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
